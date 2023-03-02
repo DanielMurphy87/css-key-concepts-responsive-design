@@ -36,3 +36,36 @@ h1 {
 p {
     font-size: 0.75rem;
 }
+
+@media (min-width: 700px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    body>p {
+        display: none;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--dark);
+        color: white;
+    }
+}
