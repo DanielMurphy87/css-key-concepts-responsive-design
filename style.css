@@ -4,10 +4,11 @@
     --light: #E7ECEF;
     --dark: #272932;
     --camel: #D8A47F;
+    font-family: 'Oxygen', sans-serif;
 }
 
 body {
-    background-color: var(--light);
+    background-color: var(--light);    
 }
 
 .card-container {
