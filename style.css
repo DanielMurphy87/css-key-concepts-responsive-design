@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: var(--light);    
+    background-color: var(--light);
 }
 
 .card-container {
@@ -38,6 +38,30 @@ p {
     font-size: 0.75rem;
 }
 
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light);
+    color: white;
+    padding: 10px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+}
+
 @media (min-width: 700px) {
     h1 {
         font-size: 4rem;
@@ -62,11 +86,29 @@ p {
     body>p {
         display: none;
     }
+    .logo {
+        display: none;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        margin-top: 10px;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
     body {
         background-color: var(--dark);
+        color: white;
+    }
+    .navbar {
+        background-color: var(--dark);
+    }
+    .nav-links a {
         color: white;
     }
 }
